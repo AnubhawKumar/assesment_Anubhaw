@@ -1,0 +1,27 @@
+
+.Quote_of_the_Day{
+    border: 2px solid black;
+    position: relative;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(172, 59, 224);
+    color: white;
+    font-size: 25px;
+    border-radius: 15px 40px 5px 30px;
+}
+
+.Quote_of_the_Day p {
+    margin-left: 30px;
+}
+
+span{
+    display: inline-block;
+    position: absolute;
+    right: 450px;
+    bottom: 10%;
+}
+.quote_of_theday_container .quote_of_the_day_head{
+    color: rgb(24, 3, 44);
+}

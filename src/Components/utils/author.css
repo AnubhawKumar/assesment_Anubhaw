@@ -1,0 +1,23 @@
+.author_container{
+    border: 1px solid blue;
+}
+
+.list_author{
+    width: 50%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+.list_author li{
+    align-self: flex-start;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.author_container>h2{
+    text-align: start;
+    margin-left: 25px;
+    font-size: 30px;
+}
+    

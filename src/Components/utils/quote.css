@@ -1,0 +1,74 @@
+.all_quotes{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    margin: 5px 10px;
+}
+.quote_and_likes{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.quote_and_likes >p {
+    color: blue;
+    align-self: flex-start;
+    width: 95%;
+    text-align: left;
+    margin-left: 5px;
+}
+.quote_and_likes .likes{
+    background-color: rgb(129, 48, 48);
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    border-radius: 20px;
+}
+
+.author_quotes{
+    align-self: flex-end;
+    margin-right: 5px;
+    background-color: rgb(129, 48, 48);
+    color: white;
+    width: 200px;
+    margin-top: 0px;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.form_container{
+    display: flex;
+    position: relative;
+}
+.form_container > p{
+    font-weight: bold;
+    font-size: 18px;
+}
+.form_container > form {
+    position: absolute;
+    top: 18px;
+    left: 150px;
+}
+.input_box{
+    width: 250px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.btn_search{
+    background-color: rgb(167, 79, 79);
+    color: white;
+    padding: 6px 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.quote_head{
+    margin-left: 10px;
+    font-size: 30px;
+}

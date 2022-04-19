@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Author from './Components/Author';
+import Navigation from './Components/Navigation/Navigation';
+import Notfound from './Components/NotFound';
+import Quoteoftheday from './Components/QuoteOFtheDay';
+import Quotes from './Components/Quotes';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <h1>Software Quotes</h1>
+    <Navigation />
+    <Routes>
+      <Route exact path ="/" element={""}/>
+      <Route exact path="/author" element={<Author />} />
+      <Route exact path="/quotes" element={ <Quotes />} />
+      <Route exact path="/quote_of_the_day" element={<Quoteoftheday />} />
+      <Route path ="*" element ={<Notfound />} />
+    </Routes> 
     </div>
   );
 }
